@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitConfig {
 
     /**
-     * RabitMQ支持简单模式、工作队列模式、订阅/发布模式（fanout）、路由模式（direct）、主题模式（topic）
+     * RabitMQ支持简单模式、工作队列模式、发布/订阅模式（fanout）、路由模式（direct）、主题模式（topic）
      * @return
      */
     //==============发布/订阅模式==============
@@ -48,7 +48,9 @@ public class RabbitConfig {
         return BindingBuilder.bind(queueB()).to(fanoutExchange());
     }
 
+
     //==============路由模式==============
+
     //队列C
     @Bean()
     public Queue queueC() {
