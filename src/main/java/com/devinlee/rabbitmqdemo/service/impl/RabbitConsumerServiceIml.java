@@ -3,7 +3,6 @@ package com.devinlee.rabbitmqdemo.service.impl;
 import com.devinlee.rabbitmqdemo.service.IRabbitConsumerService;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 /**
  * 消息消费端

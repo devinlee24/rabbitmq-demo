@@ -9,4 +9,5 @@ public interface IRabbitConsumerService {
     void consumerDirectC(String message);
 
     void consumerDirectD(String message);
+
 }
